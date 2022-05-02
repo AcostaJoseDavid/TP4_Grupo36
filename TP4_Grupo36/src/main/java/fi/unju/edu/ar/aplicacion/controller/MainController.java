@@ -27,5 +27,9 @@ public class MainController {
 	public String getContactoPage() {		
 		return "contacto";
 	}
+	@GetMapping("/design")
+	public String getDesingPage() {		
+		return "design";
+	}
 
 }
