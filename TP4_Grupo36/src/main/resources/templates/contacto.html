@@ -5,16 +5,18 @@
 <title>Contacto</title>
 </head>
 <body>
-
+	<!-- header -->
 	<header style="background:white;margin:0;padding: 30px;">
 		<img height="250px"  alt="logo" src="https://www.unju.edu.ar/oferta2022/images/logo_unju.jpg" title="logo-unju">
 		<h1>Instituto Informático Jujuy</h1>		
 	</header>
 	
-	
+	<!-- nav-lista sin ordenar -->
 	<nav th:replace="layouts/nav :: nav"></nav>
 	<h3 style="padding: 10px">Ingrese sus datos por favor: </h3>
-	<form action="contacto.html" method="get" style="border: 1px solid; width: 450px; padding: 10px; margin: 20px" >
+	
+	<!-- formulario -->
+	<form action="contacto.html" method="post" style="border: 1px solid; width: 450px; padding: 10px; margin: 20px" >
 		
 	  	Nombre y Apellido: 
 	  	<input type="text" name="nombreYapellido" /> <br><br>
@@ -43,6 +45,7 @@
 		<input type="submit" name="boton" value="Enviar datos"> <br><br>
 	</form>
 	
+	<!-- footer -->
 	<footer th:replace="layouts/footer :: footer"></footer>
 	
 </body>
